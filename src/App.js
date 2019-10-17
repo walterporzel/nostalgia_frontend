@@ -7,6 +7,7 @@ import Decade from './Decade'
 
 function App() {
   return (
+    
     <div>
       <h1>Nostaldja</h1>
       <Link to="/fads">

@@ -3,6 +3,14 @@ import axios from 'axios';
 import { Route, Link } from "react-router-dom";
 
 function Fads() {
+    function deleteDecade(){
+      alert("button pressed");
+      //Fetch 
+      // componentWillUnmount()
+    }
+    function updateDecade(){
+      alert("button pressed")
+    }
     const [data, setData] = useState( [] );
   
     useEffect(() => {
@@ -22,6 +30,8 @@ function Fads() {
           {data.map(item => (
             <li>{item.name}</li>
           ))}
+        <button onClick={updateDecade}>Update</button>
+        <button onClick={deleteDecade}>Delete</button>
         </ul>
     );
   }
