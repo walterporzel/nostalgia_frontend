@@ -20,7 +20,7 @@ function Decade() {
     return (
         <ul>
           {data.map(item => (
-            <li>{item.start_year}</li>
+            <li><Link to ={'/decades/'+ item.id}>{item.start_year}</Link></li>
           ))}
         </ul>
     );
