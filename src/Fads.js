@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import { Route, Link } from "react-router-dom";
+import './Fads.css'
 
 function Fads() {
     const [data, setData] = useState( [] );
